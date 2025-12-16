@@ -1,13 +1,14 @@
-# Приложение "Places"
+# Places Application
 
-## Описание
-Приложение для просмотра и добавления интересных мест. Пользователи могут просматривать места, оставлять отзывы, добавлять места в избранное. Администраторы могут добавлять новые места и управлять пользователями.
+## Description
+An application for viewing and adding interesting places. Users can browse places, leave reviews, and add places to favorites. Administrators can add new places and manage users.
 
-## Структура проекта
-- **frontend** - React приложение с использованием Redux для управления состоянием
-- **backend** - Node.js API сервер с Express и PostgreSQL
+## Project Structure
+- **frontend** - React application using Redux for state management
+- **backend** - Node.js API server with Express and PostgreSQL
 
-## Технический стек
+## Technology Stack
+
 ### Frontend
 - React
 - Redux Toolkit
@@ -19,50 +20,50 @@
 - Node.js
 - Express
 - PostgreSQL
-- JWT для аутентификации
+- JWT for authentication
 
-## Установка и запуск
+## Installation and Setup
 
-### Предварительные требования
+### Prerequisites
 - Node.js
 - PostgreSQL
 
-### Настройка базы данных
-1. Создайте базу данных PostgreSQL
-2. Выполните скрипт из файла `backend/schema.sql`
+### Database Setup
+1. Create a PostgreSQL database
+2. Execute the script from the `backend/schema.sql` file
 
-### Настройка бэкенда
-1. Перейдите в директорию backend: `cd backend`
-2. Установите зависимости: `npm install`
-3. Создайте файл `.env` со следующими параметрами:
+### Backend Setup
+1. Navigate to the backend directory: `cd backend`
+2. Install dependencies: `npm install`
+3. Create a `.env` file with the following parameters:
    ```
    PORT=5000
    DB_USER=postgres
-   DB_PASSWORD=ваш_пароль
+   DB_PASSWORD=your_password
    DB_HOST=localhost
    DB_PORT=5432
    DB_NAME=travelapp
-   JWT_SECRET=ваш_секретный_ключ
+   JWT_SECRET=your_secret_key
    ```
-4. Запустите сервер: `npm run dev`
+4. Start the server: `npm run dev`
 
-### Настройка фронтенда
-1. Перейдите в директорию frontend: `cd frontend`
-2. Установите зависимости: `npm install`
-3. Создайте файл `.env` с параметром: `REACT_APP_API_URL=http://localhost:5000/api`
-4. Запустите приложение: `npm start`
+### Frontend Setup
+1. Navigate to the frontend directory: `cd frontend`
+2. Install dependencies: `npm install`
+3. Create a `.env` file with the parameter: `REACT_APP_API_URL=http://localhost:5000/api`
+4. Start the application: `npm start`
 
-## Пользователи по умолчанию
-- Администратор: admin@example.com / admin123
-- Пользователь: user@example.com / user123
+## Default Users
+- Administrator: admin@example.com / admin123
+- User: user@example.com / user123
 
-## Основные функции
-- Просмотр списка мест
-- Фильтрация мест по категориям
-- Просмотр детальной информации о месте
-- Оставление отзывов
-- Добавление мест в избранное
-- Административная панель для управления пользователями и местами
+## Main Features
+- View list of places
+- Filter places by categories
+- View detailed information about a place
+- Leave reviews
+- Add places to favorites
+- Administrative panel for managing users and places
 
-## Скриншоты
-[В данной версии скриншоты отсутствуют] 
+## Screenshots
+[Screenshots are not available in this version]
